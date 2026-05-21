@@ -1,0 +1,48 @@
+/* --- PREMIUM ENTERPRISE FINANCIAL DASHBOARD DESIGN --- */
+
+/* Force rigidly constrained viewport boundaries to handle touch inputs */
+html, body, [data-testid="stAppViewContainer"], .main, .block-container {
+    overscroll-behavior-y: contain !important;
+    overscroll-behavior-x: none !important;
+    overflow-y: auto !important;
+}
+
+/* Adjust application container margins for mobile screens */
+.main .block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Transform standard Streamlit metrics into sharp analytical card widgets */
+div[data-testid="stMetricWidget"] {
+    background-color: #1e222b !important;
+    border: 1px solid #2d3139 !important;
+    border-radius: 10px !important;
+    padding: 15px 20px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Accent pricing fonts */
+div[data-testid="stMetricValue"] {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #00e676 !important; /* Premium Emerald Accent */
+    letter-spacing: -0.5px !important;
+}
+
+/* Structure typography for KPI descriptions */
+div[data-testid="stMetricLabel"] {
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    color: #8a94a6 !important;
+    margin-bottom: 4px !important;
+}
+
+/* Clean border rounding for the interactive data editor framework */
+div[data-testid="stDataEditor"] {
+    border: 1px solid #2d3139 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
